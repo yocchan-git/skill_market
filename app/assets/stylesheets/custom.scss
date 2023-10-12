@@ -1,0 +1,55 @@
+/* mixins, variables, etc. */
+
+$gray-medium-light: #eaeaea;
+
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+// ヘッダー
+header{
+    height: 70px;
+    width: 100%;
+}
+header a{
+    text-decoration: none;
+    color: rgb(27, 26, 26);
+}
+header a:hover{
+    text-decoration: none;
+    color: rgb(86, 15, 15);
+}
+.header-nav nav{
+    display: flex;
+    margin-top: 30px;
+}
+.header-nav nav li{
+    list-style: none;
+    margin-right: 20px;
+} 
+
+.header-title{
+    float: left;
+    margin-top: 30px;
+}
+.header-nav{
+    float: right;
+}
+
+/* forms */
+.form-width{
+    width: 500px;
+    margin: 0 auto;
+}
+
+input, textarea, select, .uneditable-input {
+    border: 1px solid #bbb;
+    width: 100%;
+    margin-bottom: 15px;
+    @include box_sizing;
+}
+  
+input {
+    height: auto !important;
+}
