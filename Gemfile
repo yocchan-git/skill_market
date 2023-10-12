@@ -8,6 +8,7 @@ gem "rails", "~> 7.0.8"
 gem "bootstrap-sass",  "3.4.1"
 gem "bcrypt",          "3.1.18"
 gem "minitest-reporters"
+gem 'rails-controller-testing'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
